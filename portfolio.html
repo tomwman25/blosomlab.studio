@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Work – BlosomLab Portfolio</title>
+  
+    <!-- Meta -->
+    <meta name="description" content="Explore Blosomlab Studio's creative portfolio showcasing photography, video production, postproduction and more.">
+    <meta name="keywords" content="blosomlab, portfolio, video, photography, postproduction, creative agency, work examples">
+    <meta name="author" content="BlosomLab Studio">
+  
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Portfolio – BlosomLab Studio">
+    <meta property="og:description" content="See examples of our creative work.">
+    <meta property="og:image" content="https://blosomlab.studio/media/portfolio-og.jpg">
+    <meta property="og:url" content="https://blosomlab.studio/portfolio.html">
+  
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portfolio – BlosomLab Studio">
+    <meta name="twitter:description" content="Explore our work: video, photos, campaigns.">
+    <meta name="twitter:image" content="https://blosomlab.studio/media/portfolio-og.jpg">
+  
+    <link rel="canonical" href="https://www.blosomlab.studio/portfolio.html" />
+    <link rel="icon" href="/media/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" /> 
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="header"></div>
+  
+    <section class="portfolio-intro animate-on-scroll">
+      <h1>Our Portfolio</h1>
+      <p>See what we've created in collaboration with our clients.</p>
+    </section>
+  
+    <div class="portfolio-filters animate-on-scroll">
+      <button data-filter="all" class="active">#All</button>
+      <button data-filter="interviews">#Interviews</button>
+      <button data-filter="products">#Products</button>
+      <button data-filter="video">#Video</button>
+      <button data-filter="photo">#Photo</button>
+      <button data-filter="postproduction">#Postproduction</button>
+    </div>
+  
+    <section class="portfolio-grid">
+      <!-- Príklad jednej dlaždice -->
+      <div class="portfolio-item animate-on-scroll" data-tags="#photo #products">
+        <div class="hover-overlay">
+          <h2>Product Launch</h2>
+          <p>#photo #products</p>
+        </div>
+        <img src="media/project-1.jpg" alt="Product launch">
+      </div>
+      <!-- ďalšie... -->
+    </section>
+  
+    <!-- Popup Modal -->
+    <div id="portfolio-popup" class="popup hidden">
+      <div class="popup-content layout-wide">
+        <img class="main-image" src="" />
+        <div class="sub-images">
+          <!-- dynamicky renderované -->
+        </div>
+        <p class="popup-description"></p>
+        <button class="popup-close">×</button>
+      </div>
+    </div>
+  
+    <div id="footer"></div>
+  </body>
+</html>
