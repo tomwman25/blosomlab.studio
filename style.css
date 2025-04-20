@@ -11,6 +11,55 @@
 }
 
 /*-------------------------*/
+/* Viewport Wrapper */
+/*-------------------------*/
+.viewport-wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  border: 2px dashed orange; /* Pre vizuálne ladenie */
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%; /* default pre MD */
+  transition: width 0.3s ease;
+}
+
+/* XS – Mobile (do 480px) */
+@media screen and (max-width: 480px) {
+  .viewport-wrapper {
+    width: 95%;
+    padding: 0 10px;
+  }
+}
+
+/* SM – Mobile+ (481–767px) */
+@media screen and (max-width: 767px) {
+  .viewport-wrapper {
+    width: 90%;
+    padding: 0 10px;
+  }
+}
+
+/* MD – Tablet (768–1023px) */
+@media screen and (max-width: 1023px) {
+  .viewport-wrapper {
+    width: 80%;
+  }
+}
+
+/* LG – Desktop (1024–1439px) */
+/* nič netreba – ponecháme 80% ako default */
+
+/* XL – 1440+ (veľké displeje) */
+@media screen and (min-width: 1440px) {
+  .viewport-wrapper {
+    width: 70%;
+  }
+}
+
+/*-------------------------*/
 /* Header */
 /*-------------------------*/
 
